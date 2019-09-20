@@ -31,11 +31,11 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnOKttc = new System.Windows.Forms.Button();
-            this.btnThemNCC = new System.Windows.Forms.Button();
-            this.cbbNV = new System.Windows.Forms.ComboBox();
+            this.lbMNV = new System.Windows.Forms.Label();
             this.nHANVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tHNNDataSetNVPNK = new THNN.THNNDataSetNVPNK();
+            this.btnThemNCC = new System.Windows.Forms.Button();
+            this.cbbNV = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtMSTNCC = new System.Windows.Forms.TextBox();
             this.nHACUNGCAPBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -46,11 +46,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.groupBoxTTCT = new System.Windows.Forms.GroupBox();
+            this.txtmapx = new System.Windows.Forms.TextBox();
+            this.txtngaypx = new System.Windows.Forms.TextBox();
+            this.richTxtghichu = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -63,14 +62,39 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.nHACUNGCAPTableAdapter = new THNN.THNNDataSetNCCTableAdapters.NHACUNGCAPTableAdapter();
             this.nHANVIENTableAdapter = new THNN.THNNDataSetNVPNKTableAdapters.NHANVIENTableAdapter();
+            this.phieunhapbindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.tHNNDataSetpn = new THNN.THNNDataSetpn();
+            this.thnnDataSetNCC1 = new THNN.THNNDataSetNCC();
+            this.tHNNDataSetphieunhap = new THNN.THNNDataSetphieunhap();
+            this.pHIEUNHAPTableAdapter = new THNN.THNNDataSetpnTableAdapters.PHIEUNHAPTableAdapter();
+            this.tHNNDataSetCTPN = new THNN.THNNDataSetCTPN();
+            this.cTPHIEUNHAPBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cTPHIEUNHAPTableAdapter = new THNN.THNNDataSetCTPNTableAdapters.CTPHIEUNHAPTableAdapter();
+            this.tHNNDataSetHangHoa = new THNN.THNNDataSetHangHoa();
+            this.hANGHOABindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hANGHOATableAdapter = new THNN.THNNDataSetHangHoaTableAdapters.HANGHOATableAdapter();
+            this.TenHH = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.MaHH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DVT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Thanhtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nHANVIENBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHNNDataSetNVPNK)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nHACUNGCAPBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHNNDataSetNCC)).BeginInit();
-            this.groupBox2.SuspendLayout();
+            this.groupBoxTTCT.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phieunhapbindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tHNNDataSetpn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.thnnDataSetNCC1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tHNNDataSetphieunhap)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tHNNDataSetCTPN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cTPHIEUNHAPBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tHNNDataSetHangHoa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hANGHOABindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -85,7 +109,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnOKttc);
+            this.groupBox1.Controls.Add(this.lbMNV);
             this.groupBox1.Controls.Add(this.btnThemNCC);
             this.groupBox1.Controls.Add(this.cbbNV);
             this.groupBox1.Controls.Add(this.label8);
@@ -102,14 +126,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin chung";
             // 
-            // btnOKttc
+            // lbMNV
             // 
-            this.btnOKttc.Location = new System.Drawing.Point(297, 141);
-            this.btnOKttc.Name = "btnOKttc";
-            this.btnOKttc.Size = new System.Drawing.Size(101, 35);
-            this.btnOKttc.TabIndex = 10;
-            this.btnOKttc.Text = "OK";
-            this.btnOKttc.UseVisualStyleBackColor = true;
+            this.lbMNV.AutoSize = true;
+            this.lbMNV.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nHANVIENBindingSource, "MANV", true));
+            this.lbMNV.Location = new System.Drawing.Point(293, 156);
+            this.lbMNV.Name = "lbMNV";
+            this.lbMNV.Size = new System.Drawing.Size(0, 20);
+            this.lbMNV.TabIndex = 11;
+            // 
+            // nHANVIENBindingSource
+            // 
+            this.nHANVIENBindingSource.DataMember = "NHANVIEN";
+            this.nHANVIENBindingSource.DataSource = this.tHNNDataSetNVPNK;
+            // 
+            // tHNNDataSetNVPNK
+            // 
+            this.tHNNDataSetNVPNK.DataSetName = "THNNDataSetNVPNK";
+            this.tHNNDataSetNVPNK.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btnThemNCC
             // 
@@ -130,16 +164,6 @@
             this.cbbNV.Size = new System.Drawing.Size(173, 28);
             this.cbbNV.TabIndex = 8;
             this.cbbNV.ValueMember = "MANV";
-            // 
-            // nHANVIENBindingSource
-            // 
-            this.nHANVIENBindingSource.DataMember = "NHANVIEN";
-            this.nHANVIENBindingSource.DataSource = this.tHNNDataSetNVPNK;
-            // 
-            // tHNNDataSetNVPNK
-            // 
-            this.tHNNDataSetNVPNK.DataSetName = "THNNDataSetNVPNK";
-            this.tHNNDataSetNVPNK.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label8
             // 
@@ -222,53 +246,42 @@
             this.label5.TabIndex = 3;
             this.label5.Text = "Ghi chú:";
             // 
-            // groupBox2
+            // groupBoxTTCT
             // 
-            this.groupBox2.Controls.Add(this.button6);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.richTextBox1);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Enabled = false;
-            this.groupBox2.Location = new System.Drawing.Point(540, 43);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(392, 214);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Thông tin phiếu nhập";
+            this.groupBoxTTCT.Controls.Add(this.txtmapx);
+            this.groupBoxTTCT.Controls.Add(this.txtngaypx);
+            this.groupBoxTTCT.Controls.Add(this.richTxtghichu);
+            this.groupBoxTTCT.Controls.Add(this.label7);
+            this.groupBoxTTCT.Controls.Add(this.label6);
+            this.groupBoxTTCT.Controls.Add(this.label5);
+            this.groupBoxTTCT.Location = new System.Drawing.Point(540, 43);
+            this.groupBoxTTCT.Name = "groupBoxTTCT";
+            this.groupBoxTTCT.Size = new System.Drawing.Size(392, 214);
+            this.groupBoxTTCT.TabIndex = 2;
+            this.groupBoxTTCT.TabStop = false;
+            this.groupBoxTTCT.Text = "Thông tin phiếu nhập";
             // 
-            // button6
+            // txtmapx
             // 
-            this.button6.Location = new System.Drawing.Point(180, 171);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(93, 37);
-            this.button6.TabIndex = 9;
-            this.button6.Text = "OK";
-            this.button6.UseVisualStyleBackColor = true;
+            this.txtmapx.Location = new System.Drawing.Point(129, 71);
+            this.txtmapx.Name = "txtmapx";
+            this.txtmapx.Size = new System.Drawing.Size(173, 26);
+            this.txtmapx.TabIndex = 8;
             // 
-            // textBox4
+            // txtngaypx
             // 
-            this.textBox4.Location = new System.Drawing.Point(129, 71);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(173, 26);
-            this.textBox4.TabIndex = 8;
+            this.txtngaypx.Location = new System.Drawing.Point(129, 34);
+            this.txtngaypx.Name = "txtngaypx";
+            this.txtngaypx.Size = new System.Drawing.Size(173, 26);
+            this.txtngaypx.TabIndex = 7;
             // 
-            // textBox3
+            // richTxtghichu
             // 
-            this.textBox3.Location = new System.Drawing.Point(129, 34);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(173, 26);
-            this.textBox3.TabIndex = 7;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(129, 110);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(237, 55);
-            this.richTextBox1.TabIndex = 7;
-            this.richTextBox1.Text = "";
+            this.richTxtghichu.Location = new System.Drawing.Point(129, 110);
+            this.richTxtghichu.Name = "richTxtghichu";
+            this.richTxtghichu.Size = new System.Drawing.Size(237, 55);
+            this.richTxtghichu.TabIndex = 7;
+            this.richTxtghichu.Text = "";
             // 
             // label7
             // 
@@ -321,6 +334,7 @@
             this.button4.TabIndex = 5;
             this.button4.Text = "THOÁT";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -331,6 +345,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "LƯU";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // textBox5
             // 
@@ -359,12 +374,23 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.TenHH,
+            this.MaHH,
+            this.DVT,
+            this.SL,
+            this.DonGia,
+            this.Thanhtien});
+            this.dataGridView1.DataSource = this.hANGHOABindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(6, 35);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(805, 164);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // nHACUNGCAPTableAdapter
             // 
@@ -374,13 +400,100 @@
             // 
             this.nHANVIENTableAdapter.ClearBeforeFill = true;
             // 
+            // phieunhapbindingSource1
+            // 
+            this.phieunhapbindingSource1.DataMember = "PHIEUNHAP";
+            this.phieunhapbindingSource1.DataSource = this.tHNNDataSetpn;
+            // 
+            // tHNNDataSetpn
+            // 
+            this.tHNNDataSetpn.DataSetName = "THNNDataSetpn";
+            this.tHNNDataSetpn.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // thnnDataSetNCC1
+            // 
+            this.thnnDataSetNCC1.DataSetName = "THNNDataSetNCC";
+            this.thnnDataSetNCC1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tHNNDataSetphieunhap
+            // 
+            this.tHNNDataSetphieunhap.DataSetName = "THNNDataSetphieunhap";
+            this.tHNNDataSetphieunhap.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pHIEUNHAPTableAdapter
+            // 
+            this.pHIEUNHAPTableAdapter.ClearBeforeFill = true;
+            // 
+            // tHNNDataSetCTPN
+            // 
+            this.tHNNDataSetCTPN.DataSetName = "THNNDataSetCTPN";
+            this.tHNNDataSetCTPN.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cTPHIEUNHAPBindingSource
+            // 
+            this.cTPHIEUNHAPBindingSource.DataMember = "CTPHIEUNHAP";
+            this.cTPHIEUNHAPBindingSource.DataSource = this.tHNNDataSetCTPN;
+            // 
+            // cTPHIEUNHAPTableAdapter
+            // 
+            this.cTPHIEUNHAPTableAdapter.ClearBeforeFill = true;
+            // 
+            // tHNNDataSetHangHoa
+            // 
+            this.tHNNDataSetHangHoa.DataSetName = "THNNDataSetHangHoa";
+            this.tHNNDataSetHangHoa.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // hANGHOABindingSource
+            // 
+            this.hANGHOABindingSource.DataMember = "HANGHOA";
+            this.hANGHOABindingSource.DataSource = this.tHNNDataSetHangHoa;
+            // 
+            // hANGHOATableAdapter
+            // 
+            this.hANGHOATableAdapter.ClearBeforeFill = true;
+            // 
+            // TenHH
+            // 
+            this.TenHH.DataSource = this.hANGHOABindingSource;
+            this.TenHH.DisplayMember = "TENHH";
+            this.TenHH.HeaderText = "Tên hàng hóa";
+            this.TenHH.Name = "TenHH";
+            this.TenHH.ValueMember = "MAHH";
+            // 
+            // MaHH
+            // 
+            this.MaHH.DataPropertyName = "MAHH";
+            this.MaHH.HeaderText = "Mã hàng hóa";
+            this.MaHH.Name = "MaHH";
+            // 
+            // DVT
+            // 
+            this.DVT.DataPropertyName = "DVT";
+            this.DVT.HeaderText = "Đơn vị tính";
+            this.DVT.Name = "DVT";
+            // 
+            // SL
+            // 
+            this.SL.HeaderText = "Số lượng";
+            this.SL.Name = "SL";
+            // 
+            // DonGia
+            // 
+            this.DonGia.HeaderText = "Đơn giá";
+            this.DonGia.Name = "DonGia";
+            // 
+            // Thanhtien
+            // 
+            this.Thanhtien.HeaderText = "Thành tiền";
+            this.Thanhtien.Name = "Thanhtien";
+            // 
             // NhapKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(944, 589);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBoxTTCT);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "NhapKho";
@@ -392,11 +505,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.tHNNDataSetNVPNK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nHACUNGCAPBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHNNDataSetNCC)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.groupBoxTTCT.ResumeLayout(false);
+            this.groupBoxTTCT.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phieunhapbindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tHNNDataSetpn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.thnnDataSetNCC1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tHNNDataSetphieunhap)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tHNNDataSetCTPN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cTPHIEUNHAPBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tHNNDataSetHangHoa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hANGHOABindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -413,13 +534,12 @@
         private System.Windows.Forms.TextBox txtMSTNCC;
         private System.Windows.Forms.TextBox txtMaNCC;
         private System.Windows.Forms.ComboBox ccbtenNCC;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.GroupBox groupBoxTTCT;
+        private System.Windows.Forms.RichTextBox richTxtghichu;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button btnOKttc;
+        private System.Windows.Forms.TextBox txtmapx;
+        private System.Windows.Forms.TextBox txtngaypx;
         private System.Windows.Forms.Button btnThemNCC;
         private System.Windows.Forms.ComboBox cbbNV;
         private System.Windows.Forms.Label label8;
@@ -431,12 +551,29 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button6;
         private THNNDataSetNCC tHNNDataSetNCC;
         private System.Windows.Forms.BindingSource nHACUNGCAPBindingSource;
         private THNNDataSetNCCTableAdapters.NHACUNGCAPTableAdapter nHACUNGCAPTableAdapter;
         private THNNDataSetNVPNK tHNNDataSetNVPNK;
         private System.Windows.Forms.BindingSource nHANVIENBindingSource;
         private THNNDataSetNVPNKTableAdapters.NHANVIENTableAdapter nHANVIENTableAdapter;
+        private System.Windows.Forms.BindingSource phieunhapbindingSource1;
+        private THNNDataSetpn tHNNDataSetpn;
+        private THNNDataSetNCC thnnDataSetNCC1;
+        private THNNDataSetphieunhap tHNNDataSetphieunhap;
+        private THNNDataSetpnTableAdapters.PHIEUNHAPTableAdapter pHIEUNHAPTableAdapter;
+        private System.Windows.Forms.Label lbMNV;
+        private THNNDataSetCTPN tHNNDataSetCTPN;
+        private System.Windows.Forms.BindingSource cTPHIEUNHAPBindingSource;
+        private THNNDataSetCTPNTableAdapters.CTPHIEUNHAPTableAdapter cTPHIEUNHAPTableAdapter;
+        private THNNDataSetHangHoa tHNNDataSetHangHoa;
+        private System.Windows.Forms.BindingSource hANGHOABindingSource;
+        private THNNDataSetHangHoaTableAdapters.HANGHOATableAdapter hANGHOATableAdapter;
+        private System.Windows.Forms.DataGridViewComboBoxColumn TenHH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaHH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DVT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SL;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DonGia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Thanhtien;
     }
 }

@@ -54,5 +54,18 @@ namespace THNN
                 this.Close();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Login fr = new Login();
+            fr.ShowDialog();
+            
+        }
     }
 }

@@ -98,6 +98,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="THNNDataSetCTPN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>THNNDataSetCTPN.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="THNNDataSetHangHoa.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>THNNDataSetHangHoa.xsd</DependentUpon>
+    </Compile>
     <Compile Include="THNNDataSetNCC.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -107,6 +117,16 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>THNNDataSetNVPNK.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="THNNDataSetphieunhap.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>THNNDataSetphieunhap.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="THNNDataSetpn.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>THNNDataSetpn.xsd</DependentUpon>
     </Compile>
     <Compile Include="XuatKho.cs">
       <SubType>Form</SubType>
@@ -154,6 +174,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="THNNDataSetCTPN.xsc">
+      <DependentUpon>THNNDataSetCTPN.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetCTPN.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>THNNDataSetCTPN.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="THNNDataSetCTPN.xss">
+      <DependentUpon>THNNDataSetCTPN.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetHangHoa.xsc">
+      <DependentUpon>THNNDataSetHangHoa.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetHangHoa.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>THNNDataSetHangHoa.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="THNNDataSetHangHoa.xss">
+      <DependentUpon>THNNDataSetHangHoa.xsd</DependentUpon>
+    </None>
     <None Include="THNNDataSetNCC.xsc">
       <DependentUpon>THNNDataSetNCC.xsd</DependentUpon>
     </None>
@@ -175,6 +217,28 @@
     </None>
     <None Include="THNNDataSetNVPNK.xss">
       <DependentUpon>THNNDataSetNVPNK.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetphieunhap.xsc">
+      <DependentUpon>THNNDataSetphieunhap.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetphieunhap.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>THNNDataSetphieunhap.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="THNNDataSetphieunhap.xss">
+      <DependentUpon>THNNDataSetphieunhap.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetpn.xsc">
+      <DependentUpon>THNNDataSetpn.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetpn.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>THNNDataSetpn.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="THNNDataSetpn.xss">
+      <DependentUpon>THNNDataSetpn.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
