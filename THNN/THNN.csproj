@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA7DB218-26A9-441F-B2A9-2FDA940F8309}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>THNN</RootNamespace>
+    <AssemblyName>THNN</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Lopketnoi.cs" />
+    <Compile Include="HangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HangHoa.Designer.cs">
+      <DependentUpon>HangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhachHang.Designer.cs">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhaCungCap.Designer.cs">
+      <DependentUpon>NhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhapKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhapKho.Designer.cs">
+      <DependentUpon>NhapKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="THNNDataSetCTPN_pn.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>THNNDataSetCTPN_pn.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="THNNDataSetCTPN_TQPN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>THNNDataSetCTPN_TQPN.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="THNNDataSetCTPX_TQPX.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>THNNDataSetCTPX_TQPX.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="THNNDataSetHH_HH.cs">
+      <DependentUpon>THNNDataSetHH_HH.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="THNNDataSetHH_HH.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>THNNDataSetHH_HH.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="THNNDataSetHH_PN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>THNNDataSetHH_PN.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="THNNDataSetKH_KH.cs">
+      <DependentUpon>THNNDataSetKH_KH.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="THNNDataSetKH_KH.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>THNNDataSetKH_KH.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="THNNDataSetKH_PX.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>THNNDataSetKH_PX.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="THNNDataSetLHH1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>THNNDataSetLHH1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="THNNDataSetLHH_HH.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>THNNDataSetLHH_HH.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="THNNDataSetNCC.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>THNNDataSetNCC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="THNNDataSetNCC_NCC.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>THNNDataSetNCC_NCC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="THNNDataSetNVPNK.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>THNNDataSetNVPNK.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="THNNDataSetNV_PX.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>THNNDataSetNV_PX.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="THNNDataSetPhieuNhap.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>THNNDataSetPhieuNhap.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="THNNDataSetPhieuxuat_PX.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>THNNDataSetPhieuxuat_PX.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="THNNDataSetPN_TQPN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>THNNDataSetPN_TQPN.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="THNNDataSetPX_TQPX.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>THNNDataSetPX_TQPX.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TQphieunhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TQphieunhap.Designer.cs">
+      <DependentUpon>TQphieunhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TQXuatkho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TQXuatkho.Designer.cs">
+      <DependentUpon>TQXuatkho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XuatKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XuatKho.Designer.cs">
+      <DependentUpon>XuatKho.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="HangHoa.resx">
+      <DependentUpon>HangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhachHang.resx">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhaCungCap.resx">
+      <DependentUpon>NhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhapKho.resx">
+      <DependentUpon>NhapKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TQphieunhap.resx">
+      <DependentUpon>TQphieunhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TQXuatkho.resx">
+      <DependentUpon>TQXuatkho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XuatKho.resx">
+      <DependentUpon>XuatKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="THNNDataSetCTPN_pn.xsc">
+      <DependentUpon>THNNDataSetCTPN_pn.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetCTPN_pn.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>THNNDataSetCTPN_pn.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="THNNDataSetCTPN_pn.xss">
+      <DependentUpon>THNNDataSetCTPN_pn.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetCTPN_TQPN.xsc">
+      <DependentUpon>THNNDataSetCTPN_TQPN.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetCTPN_TQPN.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>THNNDataSetCTPN_TQPN.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="THNNDataSetCTPN_TQPN.xss">
+      <DependentUpon>THNNDataSetCTPN_TQPN.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetCTPX_TQPX.xsc">
+      <DependentUpon>THNNDataSetCTPX_TQPX.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetCTPX_TQPX.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>THNNDataSetCTPX_TQPX.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="THNNDataSetCTPX_TQPX.xss">
+      <DependentUpon>THNNDataSetCTPX_TQPX.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetHH_HH.xsc">
+      <DependentUpon>THNNDataSetHH_HH.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetHH_HH.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>THNNDataSetHH_HH.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="THNNDataSetHH_HH.xss">
+      <DependentUpon>THNNDataSetHH_HH.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetHH_PN.xsc">
+      <DependentUpon>THNNDataSetHH_PN.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetHH_PN.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>THNNDataSetHH_PN.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="THNNDataSetHH_PN.xss">
+      <DependentUpon>THNNDataSetHH_PN.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetKH_KH.xsc">
+      <DependentUpon>THNNDataSetKH_KH.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetKH_KH.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>THNNDataSetKH_KH.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="THNNDataSetKH_KH.xss">
+      <DependentUpon>THNNDataSetKH_KH.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetKH_PX.xsc">
+      <DependentUpon>THNNDataSetKH_PX.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetKH_PX.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>THNNDataSetKH_PX.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="THNNDataSetKH_PX.xss">
+      <DependentUpon>THNNDataSetKH_PX.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetLHH1.xsc">
+      <DependentUpon>THNNDataSetLHH1.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetLHH1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>THNNDataSetLHH1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="THNNDataSetLHH1.xss">
+      <DependentUpon>THNNDataSetLHH1.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetLHH_HH.xsc">
+      <DependentUpon>THNNDataSetLHH_HH.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetLHH_HH.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>THNNDataSetLHH_HH.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="THNNDataSetLHH_HH.xss">
+      <DependentUpon>THNNDataSetLHH_HH.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetNCC.xsc">
+      <DependentUpon>THNNDataSetNCC.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetNCC.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>THNNDataSetNCC.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="THNNDataSetNCC.xss">
+      <DependentUpon>THNNDataSetNCC.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetNCC_NCC.xsc">
+      <DependentUpon>THNNDataSetNCC_NCC.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetNCC_NCC.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>THNNDataSetNCC_NCC.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="THNNDataSetNCC_NCC.xss">
+      <DependentUpon>THNNDataSetNCC_NCC.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetNVPNK.xsc">
+      <DependentUpon>THNNDataSetNVPNK.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetNVPNK.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>THNNDataSetNVPNK.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="THNNDataSetNVPNK.xss">
+      <DependentUpon>THNNDataSetNVPNK.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetNV_PX.xsc">
+      <DependentUpon>THNNDataSetNV_PX.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetNV_PX.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>THNNDataSetNV_PX.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="THNNDataSetNV_PX.xss">
+      <DependentUpon>THNNDataSetNV_PX.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetPhieuNhap.xsc">
+      <DependentUpon>THNNDataSetPhieuNhap.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetPhieuNhap.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>THNNDataSetPhieuNhap.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="THNNDataSetPhieuNhap.xss">
+      <DependentUpon>THNNDataSetPhieuNhap.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetPhieuxuat_PX.xsc">
+      <DependentUpon>THNNDataSetPhieuxuat_PX.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetPhieuxuat_PX.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>THNNDataSetPhieuxuat_PX.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="THNNDataSetPhieuxuat_PX.xss">
+      <DependentUpon>THNNDataSetPhieuxuat_PX.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetPN_TQPN.xsc">
+      <DependentUpon>THNNDataSetPN_TQPN.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetPN_TQPN.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>THNNDataSetPN_TQPN.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="THNNDataSetPN_TQPN.xss">
+      <DependentUpon>THNNDataSetPN_TQPN.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetPX_TQPX.xsc">
+      <DependentUpon>THNNDataSetPX_TQPX.xsd</DependentUpon>
+    </None>
+    <None Include="THNNDataSetPX_TQPX.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>THNNDataSetPX_TQPX.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="THNNDataSetPX_TQPX.xss">
+      <DependentUpon>THNNDataSetPX_TQPX.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\input.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goods.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\units.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
